@@ -1,0 +1,32 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1A1D26;
+    width: 6rem;
+    height: 100vh;
+
+    .link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1.2rem 0;
+        background: inherit;
+        border: none;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+
+        &:hover {
+            background: #45A28E;
+        }
+
+        img {
+            width: 30%;
+        }
+    }
+}
