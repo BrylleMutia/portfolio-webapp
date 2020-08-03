@@ -6,6 +6,49 @@ main {
     align-items: center;
     flex-direction: column;
 
+    // animation for horizontal breaks
+    @keyframes stretch {
+        0% {
+            flex-grow: 0;
+        }
+        100% {
+            flex-grow: 1;
+        }
+    }
+
+    // animation for slanting divs
+    @keyframes entry {
+        0% {
+            width: 10vw;
+        }
+        100% {
+            width: 35vw;
+        }
+    }
+
+    // animation for name entry
+    @keyframes name-entry {
+        0% {
+            opacity: 0;
+            margin-top: 5rem;
+        }
+        100% {
+            opacity: 1;
+            margin-top: 1.5rem;
+        }
+    }
+
+    // animation for button highlight
+    @keyframes highlight {
+        0%,
+        100% {
+            padding: 14px 32px;
+        }
+        50% {
+            padding: 25px 45px;
+        }
+    }
+
     .firstline {
         display: flex;
         justify-content: center;
@@ -25,6 +68,7 @@ main {
             color: #c5c6c7;
             flex-grow: 1;
             height: 0.3rem;
+            animation: stretch 1s ease-in;
         }
     }
 
@@ -39,12 +83,14 @@ main {
             color: #66fcf1;
             height: 2rem;
             margin-top: 1.5rem;
+            animation: name-entry 2s ease-out;
         }
     }
 
     .thirdline {
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 2rem;
         width: 70%;
 
@@ -53,6 +99,7 @@ main {
             color: #c5c6c7;
             flex-grow: 1;
             height: 0.3rem;
+            animation: stretch 1s ease-in;
         }
 
         h6 {
@@ -79,10 +126,35 @@ main {
             font-weight: bold;
             font-size: 10pt;
             box-shadow: 0 15px 30px -12px;
+            animation: highlight 1s 2.5s ease-in-out;
 
             &:hover {
                 background: #45a28e;
             }
         }
+    }
+
+    .slant_left {
+        background: #1a1d26;
+        position: absolute;
+        top: 0;
+        left: -5rem;
+        z-index: -1;
+        width: 35vw;
+        height: 100vh;
+        transform: skewX(-15deg);
+        animation: entry 1s ease-in;
+    }
+
+    .slant_right {
+        background: #1a1d26;
+        position: absolute;
+        top: 0;
+        right: -7rem;
+        z-index: -1;
+        width: 35vw;
+        height: 100vh;
+        transform: skewX(-15deg);
+        animation: entry 1s ease-in;
     }
 }
