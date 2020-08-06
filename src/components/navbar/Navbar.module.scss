@@ -1,10 +1,10 @@
-.nav {
+nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #1A1D26;
-    width: 6rem;
+    min-width: 6rem;
     height: 100vh;
 
     .link {
@@ -28,5 +28,11 @@
         img {
             width: 30%;
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        min-width: 4rem;
     }
 }
