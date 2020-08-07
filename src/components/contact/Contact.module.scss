@@ -1,14 +1,36 @@
+// animation for contact info
+// @keyframes extend {
+//     0% {
+//         width: 0%;
+//     }
+//     100% {
+//         width: 70%;
+//     }
+// }
+
+// @keyframes fade {
+//     0% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
 aside {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    padding: 3rem 7rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+    overflow-y: scroll;
+    // border: 1px solid red;
 
     .contact_form {
+        // border: 1px solid red;
         width: 50%;
-        display: flex;
-        flex-direction: column;
 
         div {
             // border: 1px solid red;
@@ -31,6 +53,7 @@ aside {
 
         p {
             color: #c5c6c7;
+            width: 80%;
         }
 
         form {
@@ -75,5 +98,56 @@ aside {
                 }
             }
         }
+    }
+
+    .contact_info {
+        width: 50%;
+        color: white;
+        // border: 1px solid red;
+
+        p {
+            color: #c5c6c7;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin-top: 3rem;
+
+            li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 65%;
+                height: 2.5rem;
+                background-color: #45a28e;
+                border-radius: 50px;
+                margin-top: 1rem;
+                // animation: extend 1s ease-in;
+
+                img {
+                    width: 2.7rem;
+                    height: 1.5rem;
+                    padding: 0.5rem 0;
+                    background-color: white;
+                    border-radius: 50px;
+                }
+
+                h4 {
+                    // border: 1px solid red;
+                    flex-grow: 1;
+                    text-align: center;
+                    font-weight: 600;
+                    // animation: fade 4s ease-in;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    aside {
+        flex-direction: column;
     }
 }

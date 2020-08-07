@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./Navbar.module.scss";
 
-import HomeIcon from "../img/ic_home_white_24dp.png";
-import BioIcon from "../img/ic_person_white_24dp.png";
-import SkillsIcon from "../img/ic_equalizer_white_24dp.png";
-import PortfolioIcon from "../img/ic_folder_white_24dp.png";
-import ContactIcon from "../img/ic_mail_white_24dp.png";
+import HomeIcon from "../img/nav/ic_home_white_24dp.png";
+import BioIcon from "../img/nav/ic_person_white_24dp.png";
+import SkillsIcon from "../img/nav/ic_equalizer_white_24dp.png";
+import PortfolioIcon from "../img/nav/ic_folder_white_24dp.png";
+import ContactIcon from "../img/nav/ic_mail_white_24dp.png";
 
 import { withRouter, Link } from "react-router-dom";
 
