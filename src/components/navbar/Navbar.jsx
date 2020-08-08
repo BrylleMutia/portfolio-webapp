@@ -11,7 +11,7 @@ import { withRouter, Link } from "react-router-dom";
 
 function Navbar({ location }) {
     return (
-        <nav className={classes.nav}>
+        <nav>
             <Link to="/" className={classes.link} style={{ background: location.pathname === "/" ? "#45A28E" : null }}>
                 <img src={HomeIcon} alt="home" />
                 HOME

@@ -19,20 +19,17 @@
 
 aside {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 8%;
-    overflow-y: scroll;
     // border: 1px solid red;
 
     .contact_form {
         // border: 1px solid red;
         width: 50%;
 
-        div {
+        div.contact_message {
             // border: 1px solid red;
             display: flex;
             flex-direction: column;
@@ -56,26 +53,26 @@ aside {
             width: 80%;
         }
 
-        form {
+        form.input_form {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            margin-top: 1.5rem;
+            margin-top: 3%;
 
             input {
                 width: 50%;
-                margin-top: 0.6rem;
+                margin-top: 2%;
                 border: none;
-                padding: 0.3rem 0.6rem;
+                padding: 0.5rem 0.7rem;
                 border-radius: 3px;
             }
 
             textarea {
                 width: 50%;
                 min-height: 7rem;
-                margin-top: 0.6rem;
+                margin-top: 2%;
                 border: none;
-                padding: 0.3rem 0.6rem;
+                padding: 0.5rem 0.7rem;
                 border-radius: 3px;
                 font-size: small;
                 font-family: inherit;
@@ -86,10 +83,10 @@ aside {
                 border: none;
                 color: black;
                 padding: 8px 30px;
-                margin-top: 1.5rem;
+                margin-top: 3%;
                 border-radius: 5px;
                 font-weight: bold;
-                font-size: 10pt;
+                font-size: 0.8rem;
                 box-shadow: 0 15px 30px -12px;
 
                 &:hover {
@@ -101,8 +98,9 @@ aside {
     }
 
     .contact_info {
-        width: 50%;
+        width: 30%;
         color: white;
+        min-width: 290px;
         // border: 1px solid red;
 
         p {
@@ -120,6 +118,7 @@ aside {
                 flex-direction: row;
                 align-items: center;
                 width: 65%;
+                min-width: 290px;
                 height: 2.5rem;
                 background-color: #45a28e;
                 border-radius: 50px;
@@ -143,11 +142,5 @@ aside {
                 }
             }
         }
-    }
-}
-
-@media screen and (max-width: 990px) {
-    aside {
-        flex-direction: column;
     }
 }
