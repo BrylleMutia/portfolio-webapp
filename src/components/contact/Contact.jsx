@@ -7,7 +7,7 @@ import phoneIcon from "../img/contact/ic_phone_android_black_36dp.png";
 
 function Contact() {
     return (
-        <aside>
+        <main>
             <div className={classes.contact_form}>
                 <div className={classes.contact_message}>
                     <h1>Don't be a stranger.</h1>
@@ -51,7 +51,7 @@ function Contact() {
                     </li>
                 </ul>
             </div>
-        </aside>
+        </main>
     );
 }
 

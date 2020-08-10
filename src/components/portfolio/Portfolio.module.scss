@@ -1,14 +1,15 @@
-aside {
+article {
     max-width: 60%;
     max-height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15%;
+    margin-left: 20%;
+    padding: 2%;
 }
 
 @media screen and (max-width: 450px) {
-    aside {
+    article {
         margin-left: 10%;
     }
 }

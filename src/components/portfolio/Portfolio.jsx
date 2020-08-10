@@ -8,7 +8,7 @@ import imgTwo from "../img/portfolio/todo_today-2.png";
 
 function Portfolio() {
     return (
-        <aside>
+        <article>
             <div>
                 <Carousel>
                     <div>
@@ -21,7 +21,7 @@ function Portfolio() {
                     </div>
                 </Carousel>
             </div>
-        </aside>
+        </article>
     );
 }
 
