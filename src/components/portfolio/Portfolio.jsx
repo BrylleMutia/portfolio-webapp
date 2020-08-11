@@ -8,20 +8,26 @@ import imgTwo from "../img/portfolio/todo_today-2.png";
 
 function Portfolio() {
     return (
-        <article>
-            <div>
-                <Carousel>
-                    <div>
-                        <img src={imgOne} alt="image-one" />
-                        <a className="legend">Todo Today (#1) <br/> <a href="https://todotoday-1.herokuapp.com/">https://todotoday-1.herokuapp.com/</a></a>
-                    </div>
-                    <div>
-                        <img src={imgTwo} alt="image-two" />
-                        <p className="legend">Todo Today (#2) <br/> <a href="https://todotoday-1.herokuapp.com/">https://todotoday-1.herokuapp.com/</a></p>
-                    </div>
-                </Carousel>
+        <div className={classes.portfolio}>
+            <div className={classes.title}>
+                <h2>MY PROJECTS</h2>
+                <hr />
             </div>
-        </article>
+            <Carousel>
+                <div>
+                    <img src={imgOne} alt="image-one" />
+                    <a className="legend">
+                        Todo Today (#1) <br /> <a href="https://todotoday-1.herokuapp.com/">https://todotoday-1.herokuapp.com/</a>
+                    </a>
+                </div>
+                <div>
+                    <img src={imgTwo} alt="image-two" />
+                    <p className="legend">
+                        Todo Today (#2) <br /> <a href="https://todotoday-1.herokuapp.com/">https://todotoday-1.herokuapp.com/</a>
+                    </p>
+                </div>
+            </Carousel>
+        </div>
     );
 }
 

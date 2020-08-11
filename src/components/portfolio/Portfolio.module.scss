@@ -1,15 +1,43 @@
-article {
-    max-width: 60%;
-    max-height: 10%;
+$primary: #45A28E;
+$secondary: #66FCF1;
+$textcolor:  #c5c6c7;
+$background: #1F2833;
+$background_secondary: #1A1D26;
+
+.portfolio {
+    width: 100%;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 20%;
-    padding: 2%;
+    padding: 0 20%;
+    margin-left: 7%;
+    // border: 1px solid red;
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    // border: 1px solid red;
+
+    h2 {
+        color: $textcolor;
+        margin-right: 1em;
+    }
+
+    hr {
+        height: 8%;
+        flex: 1;
+        border: none;
+        background: $textcolor;
+    }
 }
 
 @media screen and (max-width: 450px) {
-    article {
+    .portfolio {
         margin-left: 10%;
     }
 }

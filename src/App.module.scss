@@ -1,0 +1,23 @@
+$primary: #45A28E;
+$secondary: #66FCF1;
+$textcolor:  #c5c6c7;
+$background: #1F2833;
+$background_secondary: #1A1D26;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: $background;
+  overflow-x: hidden;
+}
+
+.app {
+  display: flex;
+}
+

@@ -1,3 +1,9 @@
+$primary: #45A28E;
+$secondary: #66FCF1;
+$textcolor:  #c5c6c7;
+$background: #1F2833;
+$background_secondary: #1A1D26;
+
 main {
     width: 100%;
     height: 100vh;
@@ -62,13 +68,13 @@ main {
         h5 {
             font-size: 3.5rem;
             font-style: italic;
-            color: #c5c6c7;
+            color: $textcolor;
         }
 
         hr {
             margin-left: 2rem;
-            background: #c5c6c7;
-            color: #c5c6c7;
+            background: $textcolor;
+            color: $textcolor;
             flex-grow: 1;
             height: 0.3rem;
             animation: stretch 1s ease-in;
@@ -98,8 +104,8 @@ main {
         width: 70%;
 
         hr {
-            background: #c5c6c7;
-            color: #c5c6c7;
+            background: $textcolor;
+            color: $textcolor;
             flex-grow: 1;
             height: 0.3rem;
             animation: stretch 1s ease-in;
@@ -108,7 +114,7 @@ main {
         h6 {
             margin-left: 2rem;
             font-size: 1.5rem;
-            color: #c5c6c7;
+            color: $textcolor;
         }
     }
 

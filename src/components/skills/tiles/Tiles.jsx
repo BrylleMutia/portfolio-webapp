@@ -15,7 +15,7 @@ import python from "../img/skills/python.jpg";
 
 import classes from "./Skills.module.scss";
 
-function Skills() {
+function Tiles() {
     return (
         <article>
             <div className={classes.container}>
@@ -44,4 +44,4 @@ function Skills() {
     );
 }
 
-export default Skills;
+export default Tiles;

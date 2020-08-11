@@ -1,0 +1,43 @@
+:root {
+    --primary: #45a28e;
+    --secondary: #66fcf1;
+    --textcolor: #c5c6c7;
+    --background: #1f2833;
+    --background_secondary: #1a1d26;
+}
+
+@keyframes wipe {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: calc((var(--width, 0) * 1%) - 10%);
+    }
+}
+
+.progress_bar {
+    width: 500px;
+    height: 3em;
+    background-color: var(--background_secondary);
+    border-radius: 1.5em;
+    color: white;
+    overflow: hidden;
+}
+
+.progress_bar::before {
+    content: attr(data-content);
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 0.5em;
+    top: 0.5em;
+    bottom: 0.5em;
+    /* width: calc(var(--width, 0) * 1%); */
+    animation: wipe 1.5s ease-out forwards;
+    height: 0;
+    min-width: 2rem;
+    max-width: calc(100% - 1em);
+    background-color: var(--color);
+    border-radius: 1em;
+    padding: 1em;
+}
