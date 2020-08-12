@@ -56,7 +56,6 @@ class Chart extends Component {
                         maintainAspectRatio: this.state.window.width > 900 ? true : false,
                         title: {
                             display: true,
-                            text: "MY SKILLS",
                             fontSize: 25,
                             fontColor: "#fff",
                         },

@@ -69,10 +69,6 @@ function Progress() {
 
     return (
         <div className={classes.progress}>
-            <div className={classes.title}>
-                <h2>MY SKILLS</h2>
-                <hr />
-            </div>
             <div className={classes.columns}>
                 <div className={classes.column1}>
                     {skills.slice(0, skills.length / 2).map((skill, index) => (

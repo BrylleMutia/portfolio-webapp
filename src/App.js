@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from "./components/navbar/Navbar";
 import Home from './components/home/Home';
-import Chart from "./components/skills/chart/Chart";
-import Progress from "./components/skills/progress/Progress";
+import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
 import classes from "./App.module.scss";
@@ -22,7 +21,7 @@ function App() {
           <Route path="/" exact component={Home} />
           {/* <Route path="/bio" exact component={Bio} /> */}
           {/* <Route path="/skills" exact component={Chart} /> */}
-          <Route path="/skills" exact component={Progress} />
+          <Route path="/skills" exact component={Skills} />
           <Route path="/portfolio" exact component={Portfolio} />
           <Route path="/contact" exact component={Contact} />
         </Switch>

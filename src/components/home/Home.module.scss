@@ -137,7 +137,7 @@ main {
             box-shadow: 0 15px 30px -12px;
             animation: highlight 1s 2.5s ease-in-out;
 
-            &:hover {
+            &:hover, &:focus {
                 background: #45a28e;
                 cursor: pointer;
             }

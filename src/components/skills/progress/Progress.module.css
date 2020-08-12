@@ -8,49 +8,38 @@
 
 .progress {
     width: 100%;
-    height: 100vh;
-    margin-left: 7%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     align-items: center;
-    border: 1px solid red;
-}
-
-.title {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    border: 1px solid red;
-}
-
-h2 {
-    color: var(--textcolor);
-    margin-right: 1em;
-}
-
-hr {
-    height: 8%;
-    flex: 1;
-    border: none;
-    background: var(--textcolor);
+    /* border: 1px solid red; */
 }
 
 .columns {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 1em 0;
     width: 100%;
+    height: 100%;
     flex: 1;
     border: 1px solid red;
 }
 
 .column1,
 .column2 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: space-evenly;
-    height: 70%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 760px) {
+    .columns {
+        margin-top: 15em;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

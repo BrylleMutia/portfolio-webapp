@@ -1,19 +1,19 @@
 import React from "react";
 
-import html5 from "../img/skills/html5.jpg";
-import css3 from "../img/skills/css3.jpg";
-import js from "../img/skills/js.jpg";
-import react from "../img/skills/react.jpg";
-import redux from "../img/skills/redux.jpg";
-import sass from "../img/skills/sass.jpg";
-import materialui from "../img/skills/material-ui.png";
-import bootstrap from "../img/skills/bootstrap.jpg";
-import nodejs from "../img/skills/nodejs.jpg";
-import express from "../img/skills/express.png";
-import mongodb from "../img/skills/mongodb.jpg";
-import python from "../img/skills/python.jpg";
+import html5 from "../../img/skills/html5.jpg";
+import css3 from "../../img/skills/css3.jpg";
+import js from "../../img/skills/js.jpg";
+import react from "../../img/skills/react.jpg";
+import redux from "../../img/skills/redux.jpg";
+import sass from "../../img/skills/sass.jpg";
+import materialui from "../../img/skills/material-ui.png";
+import bootstrap from "../../img/skills/bootstrap.jpg";
+import nodejs from "../../img/skills/nodejs.jpg";
+import express from "../../img/skills/express.png";
+import mongodb from "../../img/skills/mongodb.jpg";
+import python from "../../img/skills/python.jpg";
 
-import classes from "./Skills.module.scss";
+import classes from "./Tiles.module.scss";
 
 function Tiles() {
     return (

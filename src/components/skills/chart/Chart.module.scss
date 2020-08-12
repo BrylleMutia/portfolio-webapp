@@ -1,13 +1,28 @@
 .chart {
-    width: 100vw;
+    width: 90%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 7%;
+    padding: 3rem;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (max-width: 1000px) {
     .chart {
-        padding: 3rem;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .chart {
+        width: 85%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .chart {
+        width: 75%;
+        margin-top: 10em;
     }
 }
