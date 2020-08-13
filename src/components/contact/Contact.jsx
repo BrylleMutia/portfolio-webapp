@@ -26,6 +26,7 @@ function Contact() {
                     <button type="submit">Send</button>
                 </form>
             </div>
+            <hr/>
             <div className={classes.contact_info}>
                 <p>You can also reach me in the following platforms:</p>
                 <ul>

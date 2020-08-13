@@ -22,9 +22,9 @@ $background_secondary: #1A1D26;
     align-items: center;
     width: 100%;
     // border: 1px solid red;
-
+    
     h2 {
-        color: $textcolor;
+        color: $primary;
         margin-right: 1em;
     }
 
@@ -32,7 +32,7 @@ $background_secondary: #1A1D26;
         height: 8%;
         flex: 1;
         border: none;
-        background: $textcolor;
+        background: $primary;
     }
 }
 

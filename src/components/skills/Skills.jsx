@@ -29,11 +29,6 @@ function Skills() {
                         a chance to learn something new. Numbers will just be numbers, but passion is what makes one a master".
                     </i>
                 </p>
-                <br />
-                <p>
-                    I'm a Computer Engineering graduate, I was fascinated at how websites and the internet works, so I got into web development. I
-                    started my web development roadmap on November 2019, while studying for my degree at the same time.{" "}
-                </p>
             </div>
             <div className={classes.data_display}>
                 <div className={classes.toggle}>

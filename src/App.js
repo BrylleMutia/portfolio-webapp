@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from "./components/navbar/Navbar";
 import Home from './components/home/Home';
+import Bio from "./components/bio/Bio";
 import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -19,7 +20,7 @@ function App() {
       <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          {/* <Route path="/bio" exact component={Bio} /> */}
+          <Route path="/bio" exact component={Bio} />
           {/* <Route path="/skills" exact component={Chart} /> */}
           <Route path="/skills" exact component={Skills} />
           <Route path="/portfolio" exact component={Portfolio} />

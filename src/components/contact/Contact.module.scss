@@ -1,21 +1,8 @@
-// animation for contact info
-// @keyframes extend {
-//     0% {
-//         width: 0%;
-//     }
-//     100% {
-//         width: 70%;
-//     }
-// }
-
-// @keyframes fade {
-//     0% {
-//         opacity: 0;
-//     }
-//     100% {
-//         opacity: 1;
-//     }
-// }
+$primary: #45a28e;
+$secondary: #66fcf1;
+$textcolor: #c5c6c7;
+$background: #1f2833;
+$background_secondary: #1a1d26;
 
 div.contact {
     width: 100%;
@@ -153,6 +140,16 @@ div.contact {
             }
         }
     }
+
+    hr {
+        position: absolute;
+        top: 50%;
+        left: 56%;
+        background-color: $primary;
+        width: 0.5em;
+        border: none;
+        height: 50vh;
+    }
 }
 
 @media (max-width: 850px) {
@@ -166,6 +163,10 @@ div.contact {
 
         .contact_info {
             width: 80%;
+        }
+
+        hr {
+            display: none;
         }
     }
 }
