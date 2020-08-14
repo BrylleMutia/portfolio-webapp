@@ -1,8 +1,8 @@
-$primary: #45A28E;
-$secondary: #66FCF1;
-$textcolor:  #c5c6c7;
-$background: #1F2833;
-$background_secondary: #1A1D26;
+$primary: #45a28e;
+$secondary: #66fcf1;
+$textcolor: #c5c6c7;
+$background: #1f2833;
+$background_secondary: #1a1d26;
 
 main {
     width: 100%;
@@ -128,7 +128,7 @@ main {
 
         .button_primary {
             text-decoration: none;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
             background: #66fcf1;
             border: none;
             color: black;
@@ -139,7 +139,8 @@ main {
             box-shadow: 0 15px 30px -12px;
             animation: highlight 1s 2.5s ease-in-out;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 background: #45a28e;
                 cursor: pointer;
             }
@@ -168,5 +169,14 @@ main {
         height: 100vh;
         transform: skewX(-15deg);
         animation: entry 1s ease-in;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .secondline {
+        h3 {
+            font-size: 2rem;
+            color: red;
+        }
     }
 }

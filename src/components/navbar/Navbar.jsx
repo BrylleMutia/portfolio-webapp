@@ -12,19 +12,18 @@ import { withRouter, Link } from "react-router-dom";
 function Navbar({ location }) {
     return (
         <nav>
-            <Link to="/" className={classes.link} style={{ background: location.pathname === "/" ? "#45A28E" : null }}>
-                <img src={HomeIcon} alt="home" />
-                HOME
+            <Link to="/skills" className={classes.link} style={{ background: location.pathname === "/skills" ? "#45A28E" : null }}>
+                <img src={SkillsIcon} alt="home" />
+                SKILLS
             </Link>
             <Link to="/bio" className={classes.link} style={{ background: location.pathname === "/bio" ? "#45A28E" : null }}>
                 <img src={BioIcon} alt="home" />
                 BIO
             </Link>
-            <Link to="/skills" className={classes.link} style={{ background: location.pathname === "/skills" ? "#45A28E" : null }}>
-                <img src={SkillsIcon} alt="home" />
-                SKILLS
+            <Link to="/" className={classes.link} style={{ background: location.pathname === "/" ? "#45A28E" : null }}>
+                <img src={HomeIcon} alt="home" />
+                HOME
             </Link>
-
             <Link to="/portfolio" className={classes.link} style={{ background: location.pathname === "/portfolio" ? "#45A28E" : null }}>
                 <img src={PortfolioIcon} alt="home" />
                 PORTFOLIO

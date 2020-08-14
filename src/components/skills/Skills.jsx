@@ -29,6 +29,7 @@ function Skills() {
                         a chance to learn something new. Numbers will just be numbers, but passion is what makes one a master".
                     </i>
                 </p>
+                <p className={classes.author}>− Brylle, 2020</p>
             </div>
             <div className={classes.data_display}>
                 <div className={classes.toggle}>

@@ -4,14 +4,14 @@ $textcolor: #c5c6c7;
 $background: #1f2833;
 $background_secondary: #1a1d26;
 
-div.contact {
+.contact {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 10%;
+    margin-left: 8%;
     // border: 1px solid red;
 
     .contact_form {
@@ -19,7 +19,7 @@ div.contact {
         width: 50%;
         margin-bottom: 3em;
 
-        div.contact_message {
+        .contact_message {
             // border: 1px solid red;
             display: flex;
             flex-direction: column;
@@ -49,7 +49,7 @@ div.contact {
             align-items: flex-start;
             margin-top: 3%;
             min-width: 450px;
-            
+
             input {
                 width: 50%;
                 margin-top: 2%;
@@ -57,7 +57,7 @@ div.contact {
                 padding: 0.5rem 0.7rem;
                 border-radius: 3px;
             }
-            
+
             textarea {
                 width: 50%;
                 min-height: 7rem;
@@ -68,7 +68,7 @@ div.contact {
                 font-size: small;
                 font-family: inherit;
             }
-            
+
             button {
                 background: #66fcf1;
                 border: none;
@@ -79,7 +79,7 @@ div.contact {
                 font-weight: bold;
                 font-size: 0.8rem;
                 box-shadow: 0 15px 30px -12px;
-                
+
                 &:hover {
                     background: #45a28e;
                     cursor: pointer;
@@ -87,7 +87,7 @@ div.contact {
             }
         }
     }
-    
+
     .contact_info {
         width: 30%;
         color: white;
@@ -135,6 +135,7 @@ div.contact {
                     flex-grow: 1;
                     text-align: center;
                     font-weight: 600;
+                    color: white;
                     // animation: fade 4s ease-in;
                 }
             }
@@ -168,5 +169,15 @@ div.contact {
         hr {
             display: none;
         }
+    }
+}
+
+@media (max-width: 500px ) {
+    .contact_message h1 {
+        font-size: 1.5rem;
+    }
+    .contact {
+        margin-bottom: 10vh;
+        margin-left: 0;
     }
 }

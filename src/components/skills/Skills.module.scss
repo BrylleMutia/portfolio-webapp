@@ -1,10 +1,8 @@
-:root {
-    --primary: #45a28e;
-    --secondary: #66fcf1;
-    --textcolor: #c5c6c7;
-    --background: #1f2833;
-    --background_secondary: #1a1d26;
-}
+$primary: #45a28e;
+$secondary: #66fcf1;
+$textcolor: #c5c6c7;
+$background: #1f2833;
+$background_secondary: #1a1d26;
 
 .skills {
     display: flex;
@@ -28,7 +26,7 @@
         height: 8%;
         flex: 1;
         border: none;
-        background: var(--primary);
+        background: $primary;
     }
 }
 
@@ -37,11 +35,17 @@
     width: 70%;
     height: 10%;
     text-indent: 4em;
-    color: var(--textcolor);
+    color: $textcolor;
+}
+
+.author {
+    width: 100%;
+    font-weight: 600;
+    text-align: right;
 }
 
 h2 {
-    color: var(--primary);
+    color: $primary;
     margin-right: 1em;
 }
 
@@ -64,11 +68,11 @@ h2 {
     width: 15em;
     height: 2.5em;
     margin: 1em 2.2em;
-    background-color: var(--background_secondary);
+    background-color: $background_secondary;
 }
 
 h4 {
-    color: var(--textcolor);
+    color: $textcolor;
 }
 
 .display {
@@ -76,9 +80,22 @@ h4 {
     height: 100%;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 500px) {
+    .skills {
+        margin-left: 0;
+        // margin-bottom: 20vh;
+    }
+
     .title {
+        margin-top: 2em;
         flex-direction: column;
+        justify-content: center;
+        height: 3em;
+        border-bottom: 3px solid $primary;
+        
+        h2 {
+            padding-top: 0.4em;
+        }
     }
 
     .message {

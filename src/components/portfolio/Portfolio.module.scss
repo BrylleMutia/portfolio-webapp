@@ -36,8 +36,23 @@ $background_secondary: #1A1D26;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .portfolio {
-        margin-left: 10%;
+        margin-left: -5%;
+    }
+
+    .title {
+        justify-content: center;
+        height: 3em;
+        margin-bottom: 2em;
+        border-bottom: 3px solid $primary;
+        // border: 5px solid $primary;
+        
+        h2 {
+        }
+
+        hr {
+            display: none;
+        }
     }
 }
