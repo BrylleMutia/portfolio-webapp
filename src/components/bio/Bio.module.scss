@@ -84,6 +84,7 @@ $background_secondary: #1a1d26;
     padding: 6%;
     background-color: $background_secondary;
     border-radius: 15px;
+    margin-bottom: 2.5em;
 }
 
 .buttons {
@@ -190,10 +191,6 @@ $background_secondary: #1a1d26;
             order: 1;
         }
     }
-
-    .buttons {
-        margin-top: 2em;
-    }
 }
 
 @media (max-width: 500px) {
@@ -215,6 +212,10 @@ $background_secondary: #1a1d26;
             order: 2;
             padding: 1em;
             margin: 0;
+            margin-top: 2em;
+        }
+
+        .column_two img {
             margin-top: 2em;
         }
     }

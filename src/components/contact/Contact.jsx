@@ -1,9 +1,10 @@
 import React from "react";
 import classes from "./Contact.module.scss";
 
-import fbIcon from "../img/contact/ic_android_black_36dp.png";
-import mailIcon from "../img/contact/ic_mail_black_36dp.png";
-import phoneIcon from "../img/contact/ic_phone_android_black_36dp.png";
+import fbIcon from "../img/contact/facebook.png";
+import mailIcon from "../img/contact/gmail.png";
+import phoneIcon from "../img/contact/phone.png";
+import twitterIcon from "../img/contact/twitter.png";
 
 function Contact() {
     return (
@@ -35,19 +36,15 @@ function Contact() {
                         <h4>facebook.com/brylle03</h4>
                     </li>
                     <li>
-                        <img src={fbIcon} alt="facebook-contact" />
+                        <img src={twitterIcon} alt="twitter-contact" />
                         <h4>twitter.com/bryllemutia3</h4>
                     </li>
                     <li>
-                        <img src={fbIcon} alt="facebook-contact" />
-                        <h4>github.com/BrylleMutia</h4>
-                    </li>
-                    <li>
-                        <img src={mailIcon} alt="facebook-contact" />
+                        <img src={mailIcon} alt="gmail-contact" />
                         <h4>bryllemutia3@gmail.com</h4>
                     </li>
                     <li>
-                        <img src={phoneIcon} alt="facebook-contact" />
+                        <img src={phoneIcon} alt="phone-contact" />
                         <h4>+63963-960-7132</h4>
                     </li>
                 </ul>

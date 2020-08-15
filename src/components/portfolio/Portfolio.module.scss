@@ -15,6 +15,14 @@ $background_secondary: #1A1D26;
     margin-left: 7%;
     // border: 1px solid red;
 
+    p {
+        text-align: center;
+        color: $textcolor;
+
+        a {
+            color: $secondary;
+        }
+    }
 }
 
 .title {

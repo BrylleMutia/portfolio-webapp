@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import classes from "./Skills.module.scss";
 
 import Chart from "./chart/Chart";
-import Tiles from "./tiles/Tiles";
 import Bars from "./progress/Progress";
 
 import ToggleButton from "@material-ui/lab/ToggleButton";
@@ -29,7 +28,6 @@ function Skills() {
                         a chance to learn something new. Numbers will just be numbers, but passion is what makes one a master".
                     </i>
                 </p>
-                <p className={classes.author}>− Brylle, 2020</p>
             </div>
             <div className={classes.data_display}>
                 <div className={classes.toggle}>

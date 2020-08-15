@@ -4,7 +4,7 @@ import classes from "./Progress.module.css";
 import Bar from "./bar/Bar";
 
 function Progress() {
-    const [skills, setSkills] = useState([
+    const [skills] = useState([
         {
             name: "HTML5",
             mastery: 89,

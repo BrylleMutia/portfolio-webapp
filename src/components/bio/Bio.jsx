@@ -30,12 +30,17 @@ function Bio() {
                             tried different fields of programming such as game development, machine learning, embedded systems, programmable logic
                             controllers, and eventually settled with web development.
                         </p>
+                        <p>
+                            I took online courses which you can check at my <a href="https://www.linkedin.com/in/isidro-brylle-mutia-526a66163">LinkedIn</a> profile. I
+                            made also made some personal projects, showcased at the portfolio section. I am currently freelancing at <a href="https://www.upwork.com">Upwork</a> as a Fullstack Web
+                            Developer.
+                        </p>
                     </div>
                     <div className={classes.buttons}>
                         <Link to="/contact" className={classes.button_secondary}>
                             CONTACT ME
                         </Link>
-                        <button className={classes.button_primary}>DOWNLOAD CV</button>
+                        {/* <button className={classes.button_primary}>DOWNLOAD CV</button> */}
                     </div>
                 </div>
                 <div className={classes.column_four}>

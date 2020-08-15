@@ -1,5 +1,5 @@
-import React, { useEffect, Component } from "react";
-import { Bar, defaults } from "react-chartjs-2";
+import React, { Component } from "react";
+import { Bar } from "react-chartjs-2";
 import classes from "./Chart.module.scss";
 
 class Chart extends Component {

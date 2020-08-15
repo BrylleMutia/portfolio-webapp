@@ -26,7 +26,7 @@ $background_secondary: #1a1d26;
 
             h1 {
                 // border: 1px solid red;
-                font-size: 2.2rem;
+                font-size: 2.2em;
                 margin-bottom: auto;
                 color: #45a28e;
             }
@@ -41,6 +41,7 @@ $background_secondary: #1a1d26;
         p {
             color: #c5c6c7;
             width: 80%;
+            font-size: 1.1em;
         }
 
         form.input_form {
@@ -97,9 +98,11 @@ $background_secondary: #1a1d26;
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 1rem;
 
         p {
             color: #c5c6c7;
+            font-size: 1em;
         }
 
         ul {
@@ -109,6 +112,7 @@ $background_secondary: #1a1d26;
             margin-top: 3rem;
             margin: 0;
             padding: 0;
+            font-size: 1em;
 
             li {
                 display: flex;
@@ -120,13 +124,13 @@ $background_secondary: #1a1d26;
                 background-color: #45a28e;
                 border-radius: 50px;
                 margin-top: 1rem;
+                font-size: 1em;
                 // animation: extend 1s ease-in;
 
                 img {
                     width: 2.7rem;
-                    height: 1.5rem;
-                    padding: 0.5rem 0;
-                    background-color: white;
+                    height: 95%;
+                    background-color: $primary;
                     border-radius: 50px;
                 }
 
@@ -136,6 +140,7 @@ $background_secondary: #1a1d26;
                     text-align: center;
                     font-weight: 600;
                     color: white;
+                    font-size: 1em;
                     // animation: fade 4s ease-in;
                 }
             }
@@ -173,8 +178,8 @@ $background_secondary: #1a1d26;
 }
 
 @media (max-width: 500px ) {
-    .contact_message h1 {
-        font-size: 1.5rem;
+    .contact_message {
+        font-size: 0.8rem;
     }
     .contact {
         margin-bottom: 10vh;

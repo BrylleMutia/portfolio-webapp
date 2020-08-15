@@ -62,21 +62,21 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 5rem;
+        height: 5em;
         width: 70%;
 
         h5 {
-            font-size: 3.5rem;
+            font-size: 3.5em;
             font-style: italic;
             color: $textcolor;
         }
 
         hr {
-            margin-left: 2rem;
+            margin-left: 5%;
             background: $textcolor;
             color: $textcolor;
             flex-grow: 1;
-            height: 0.3rem;
+            height: 0.3em;
             animation: stretch 1s ease-in;
         }
     }
@@ -87,10 +87,11 @@ main {
         height: 10rem;
         width: 70%;
 
-        h3 {
-            font-size: 5rem;
+        .name {
+            font-size: 5em;
             color: #66fcf1;
             height: 2rem;
+            overflow: visible;
             margin-top: 1.5rem;
             animation: name-entry 2s ease-out;
         }
@@ -107,13 +108,13 @@ main {
             background: $textcolor;
             color: $textcolor;
             flex-grow: 1;
-            height: 0.3rem;
+            height: 0.3em;
             animation: stretch 1s ease-in;
         }
 
         h6 {
-            margin-left: 2rem;
-            font-size: 1.5rem;
+            margin-left: 5%;
+            font-size: 1.5em;
             color: $textcolor;
         }
     }
@@ -124,6 +125,7 @@ main {
         justify-content: center;
         align-items: center;
         height: 10rem;
+        // padding-right: 5%;
         padding-right: 5rem;
 
         .button_primary {
@@ -172,11 +174,44 @@ main {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
+    .firstline {
+        font-size: 0.6rem;
+    }
+
     .secondline {
-        h3 {
-            font-size: 2rem;
-            color: red;
-        }
+        font-size: 0.6rem;
+    }
+
+    .thirdline {
+        font-size: 0.6rem;
+    }
+
+    .fourthline {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        margin-left: 0;
+    }
+
+    .firstline {
+        font-size: 0.4rem;
+    }
+
+    .secondline {
+        font-size: 0.7rem;
+        margin-top: -8%;
+        margin-bottom: 7%;
+    }
+
+    .thirdline {
+        font-size: 0.4rem;
+    }
+
+    .fourthline {
+        margin-left: 5rem;
     }
 }

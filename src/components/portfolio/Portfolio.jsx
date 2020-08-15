@@ -15,18 +15,19 @@ function Portfolio() {
             </div>
             <Carousel>
                 <div>
-                    <img src={imgOne} alt="image-one" />
-                    <a className="legend">
+                    <img src={imgOne} alt="project-1" />
+                    <p className="legend">
                         Todo Today (#1) <br /> <a href="https://todotoday-1.herokuapp.com/">https://todotoday-1.herokuapp.com/</a>
-                    </a>
+                    </p>
                 </div>
                 <div>
-                    <img src={imgTwo} alt="image-two" />
+                    <img src={imgTwo} alt="project-2" />
                     <p className="legend">
                         Todo Today (#2) <br /> <a href="https://todotoday-1.herokuapp.com/">https://todotoday-1.herokuapp.com/</a>
                     </p>
                 </div>
             </Carousel>
+            <p>Source code of projects can be found here: <a href="https://www.github.com/BrylleMutia">Brylle Mutia on Github</a></p>
         </div>
     );
 }
