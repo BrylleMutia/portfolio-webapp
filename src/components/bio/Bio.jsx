@@ -40,7 +40,7 @@ function Bio() {
                         <Link to="/contact" className={classes.button_secondary}>
                             CONTACT ME
                         </Link>
-                        {/* <button className={classes.button_primary}>DOWNLOAD CV</button> */}
+                        <button className={classes.button_primary}><a href="#">DOWNLOAD CV</a></button>
                     </div>
                 </div>
                 <div className={classes.column_four}>

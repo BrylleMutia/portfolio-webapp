@@ -109,6 +109,11 @@ $background_secondary: #1a1d26;
             background: #45a28e;
             cursor: pointer;
         }
+
+        a {
+            color: $background_secondary;
+            text-decoration: none;
+        }
     }
 
     .button_secondary {

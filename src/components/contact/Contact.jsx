@@ -2,9 +2,10 @@ import React from "react";
 import classes from "./Contact.module.scss";
 
 import fbIcon from "../img/contact/facebook.png";
+import twitterIcon from "../img/contact/twitter.png";
+import linkedinIcon from "../img/contact/linkedin.png";
 import mailIcon from "../img/contact/gmail.png";
 import phoneIcon from "../img/contact/phone.png";
-import twitterIcon from "../img/contact/twitter.png";
 
 function Contact() {
     return (
@@ -27,17 +28,27 @@ function Contact() {
                     <button type="submit">Send</button>
                 </form>
             </div>
-            <hr/>
+            <hr />
             <div className={classes.contact_info}>
                 <p>You can also reach me in the following platforms:</p>
                 <ul>
                     <li>
                         <img src={fbIcon} alt="facebook-contact" />
-                        <h4>facebook.com/brylle03</h4>
+                        <h4>
+                            <a href="https://www.facebook.com/brylle03">Brylle Mutia (Facebook)</a>
+                        </h4>
                     </li>
                     <li>
                         <img src={twitterIcon} alt="twitter-contact" />
-                        <h4>twitter.com/bryllemutia3</h4>
+                        <h4>
+                            <a href="https://www.twitter.com/bryllemutia3">Brylle Mutia (Twitter)</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <img src={linkedinIcon} alt="linkedin-contact" />
+                        <h4>
+                            <a href="https://www.linkedin.com/in/isidro-brylle-mutia-526a66163">Brylle Mutia (LinkedIn)</a>
+                        </h4>
                     </li>
                     <li>
                         <img src={mailIcon} alt="gmail-contact" />
