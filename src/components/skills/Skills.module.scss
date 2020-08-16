@@ -56,20 +56,20 @@ h2 {
     align-items: center;
     width: 100%;
     height: 75vh;
-}
+    }
 
-.toggle {
-    // border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    border-radius: 8px;
-    align-items: center;
-    width: 15em;
-    height: 2.5em;
-    margin: 1em 2.2em;
-    background-color: $background_secondary;
-}
+    .toggle {
+        // border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        border-radius: 8px;
+        align-items: center;
+        width: 15em;
+        height: 2.5em;
+        margin: 1em 2.2em;
+        background-color: $background_secondary;
+    }
 
 h4 {
     color: $textcolor;
