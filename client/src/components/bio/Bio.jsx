@@ -11,7 +11,7 @@ function Bio() {
                 <div className={classes.column_one}>
                     <h3>OVERVIEW</h3>
                     <p>
-                        Hi there! I'm Isidro Brylle Mutia, and I work as a fullstack web developer. I spent 5 years completing my Computer Engineering
+                        Hi there! I'm Isidro Brylle Mutia, and I work as a web developer. I spent 5 years completing my Computer Engineering
                         degree where I was exposed to both the hardware and software fields of technology, with a bit of math (like 60% of it). Then
                         as I immerse myself to different technologies, I realized that the software field is where I want to be, where I can help
                         those people in need and give as much impact to the world as a whole.
@@ -31,16 +31,19 @@ function Bio() {
                             controllers, and eventually settled with web development.
                         </p>
                         <p>
-                            I took online courses which you can check at my <a href="https://www.linkedin.com/in/isidro-brylle-mutia-526a66163">LinkedIn</a> profile. I
-                            made also made some personal projects, showcased at the portfolio section. I am currently freelancing at <a href="https://www.upwork.com">Upwork</a> as a Fullstack Web
-                            Developer.
+                            I took online courses which you can check at my{" "}
+                            <a href="https://www.linkedin.com/in/isidro-brylle-mutia-526a66163">LinkedIn</a> profile. I made also made some personal
+                            projects, showcased at the portfolio section. I am currently freelancing at <a href="https://www.upwork.com">Upwork</a> as
+                            a Fullstack Web Developer.
                         </p>
                     </div>
                     <div className={classes.buttons}>
                         <Link to="/contact" className={classes.button_secondary}>
                             CONTACT ME
                         </Link>
-                        <button className={classes.button_primary}><a href="#">DOWNLOAD CV</a></button>
+                        <button className={classes.button_primary}>
+                            <a href="https://drive.google.com/file/d/1R9iicG4XZU4hrySiwyVDXsE6RXD6gJ8S/view?usp=sharing">DOWNLOAD CV</a>
+                        </button>
                     </div>
                 </div>
                 <div className={classes.column_four}>

@@ -5,11 +5,11 @@ import classes from "./Chart.module.scss";
 class Chart extends Component {
     state = {
         chartData: {
-            labels: ["HTML5", "CSS3", "JAVASCRIPT", "REACT", "REDUX", "SASS", "MATERIAL UI", "BOOTSTRAP", "NODE.JS", "EXPRESS", "MONGODB", "PYTHON"],
+            labels: ["HTML5", "CSS3", "JAVASCRIPT", "REACT", "REDUX", "SASS", "MATERIAL UI", "GIT", "NODE.JS", "EXPRESS", "MONGODB", "PYTHON"],
             datasets: [
                 {
                     label: "Mastery",
-                    data: [89, 87, 90, 93, 87, 91, 85, 79, 85, 87, 83, 91],
+                    data: [89, 87, 90, 93, 87, 91, 85, 81, 70, 74, 76, 90],
                     backgroundColor: [
                         "rgb(228, 77, 38)",
                         "rgb(21, 114, 182)",
@@ -64,6 +64,14 @@ class Chart extends Component {
                                 fontColor: "#fff",
                             },
                         },
+                        scales: {
+                            yAxes: [{
+                                display: true,
+                                ticks: {
+                                    suggestedMin: 50
+                                }
+                            }]
+                        }
                     }}
                 />
             </div>

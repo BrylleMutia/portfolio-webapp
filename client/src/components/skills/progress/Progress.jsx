@@ -41,8 +41,8 @@ function Progress() {
             color: "rgb(0, 176, 255)",
         },
         {
-            name: "BOOTSTRAP",
-            mastery: 77,
+            name: "GIT",
+            mastery: 81,
             color: "rgb(107, 59, 177)",
         },
         {
@@ -62,7 +62,7 @@ function Progress() {
         },
         {
             name: "PYTHON",
-            mastery: 91,
+            mastery: 90,
             color: "rgb(255, 202, 29)",
         },
     ]);

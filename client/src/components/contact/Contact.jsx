@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Contact.module.scss";
 
 import fbIcon from "../img/contact/facebook.png";
@@ -7,7 +7,49 @@ import linkedinIcon from "../img/contact/linkedin.png";
 import mailIcon from "../img/contact/gmail.png";
 import phoneIcon from "../img/contact/phone.png";
 
+import axios from "axios";
+
+import { Alert } from "@material-ui/lab";
+
 function Contact() {
+    const [sendSuccess, setSendSuccess] = useState(false);
+    const [displayAlert, setDisplayAlert] = useState(false);
+
+    const sendMail = (e) => {
+        e.preventDefault();
+
+        const headers = {
+            "Content-Type": "application/json",
+        };
+
+        const body = JSON.stringify({
+            name: e.target.name.value,
+            email: e.target.email.value,
+            description: e.target.description.value,
+            budget: e.target.budget.value,
+        });
+
+        axios
+            .post("/sendmail", headers, body)
+            .then((response) => setSendSuccess(true))
+            .catch((error) => setSendSuccess(false));
+
+        // show alert for 5 seconds after every request
+        setDisplayAlert(true);
+        setTimeout(hideAlert, 5000);
+    };
+
+    const hideAlert = () => setDisplayAlert(false);
+
+    // style of alert component to show / hide
+    const alertDisplay = () => {
+        if(!displayAlert) {
+            return {
+                "display": "none"
+            }
+        } else return null;
+    }
+
     return (
         <div className={classes.contact}>
             <div className={classes.contact_form}>
@@ -20,11 +62,17 @@ function Contact() {
                     </p>
                 </div>
 
-                <form className={classes.input_form}>
+                <div className={classes.alert}>
+                    <Alert color={sendSuccess ? "success" : "error"} variant="standard" style={alertDisplay()}>
+                        {sendSuccess ? "SUCCESS! Request Sent" : "ERROR: Request not sent"}
+                    </Alert>
+                </div>
+
+                <form className={classes.input_form} onSubmit={sendMail} method="POST">
                     <input type="text" name="name" placeholder="Name" />
                     <input type="email" name="email" placeholder="Email" />
                     <input type="number" name="budget" placeholder="Budget" />
-                    <textarea placeholder="Project description"></textarea>
+                    <textarea name="description" placeholder="Project description"></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>

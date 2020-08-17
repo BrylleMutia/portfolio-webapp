@@ -15,7 +15,7 @@ function Home() {
             </div>
             <div className={classes.thirdline}>
                 <hr />
-                <h6>FULLSTACK WEB DEVELOPER</h6>
+                <h6>WEB DEVELOPER</h6>
             </div>
             <div className={classes.fourthline}>
                 <Link to="/bio" className={classes.button_primary}>
