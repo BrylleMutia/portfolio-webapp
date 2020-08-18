@@ -29,8 +29,10 @@ function Contact() {
             budget: e.target.budget.value,
         });
 
+        console.log(body);
+
         axios
-            .post("/sendmail", headers, body)
+            .post("/sendmail", body, headers)
             .then((response) => setSendSuccess(true))
             .catch((error) => setSendSuccess(false));
 
@@ -43,12 +45,12 @@ function Contact() {
 
     // style of alert component to show / hide
     const alertDisplay = () => {
-        if(!displayAlert) {
+        if (!displayAlert) {
             return {
-                "display": "none"
-            }
+                display: "none",
+            };
         } else return null;
-    }
+    };
 
     return (
         <div className={classes.contact}>
@@ -69,10 +71,10 @@ function Contact() {
                 </div>
 
                 <form className={classes.input_form} onSubmit={sendMail} method="POST">
-                    <input type="text" name="name" placeholder="Name" />
-                    <input type="email" name="email" placeholder="Email" />
-                    <input type="number" name="budget" placeholder="Budget" />
-                    <textarea name="description" placeholder="Project description"></textarea>
+                    <input type="text" name="name" placeholder="Name" required/>
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <input type="number" name="budget" placeholder="Budget" required />
+                    <textarea name="description" placeholder="Project description" required></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>

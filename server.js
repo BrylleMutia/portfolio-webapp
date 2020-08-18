@@ -1,22 +1,26 @@
 const express = require("express");
 const app = express();
+const router = express.Router();
 const path = require("path");
 const config = require("config");
 const nodemailer = require("nodemailer");
 
+app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
 
-app.post("/sendmail", (req, res) => {
+router.post("/sendmail", (req, res) => {
     // instantiate SMTP server
     const smtpTrans = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 465,
-        secure: true,
+        port: 587,
+        secure: false,
+        requireTLS: true,
         auth: {
             user: config.get("GMAIL_USER"),
             pass: config.get("GMAIL_PASS"),
         },
     });
+    
 
     // specify how the email will look like
     const mailOpts = {
