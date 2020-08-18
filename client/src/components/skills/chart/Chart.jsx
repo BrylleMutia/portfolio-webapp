@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Bar } from "react-chartjs-2";
-import classes from "./Chart.module.scss";
+import classes from "./Chart.module.css";
 
 class Chart extends Component {
     state = {
@@ -24,7 +24,7 @@ class Chart extends Component {
                         "rgb(83, 152, 70)",
                         "rgb(255, 202, 29)",
                     ],
-                    scaleFontColor: "#fff"
+                    scaleFontColor: "#fff",
                 },
             ],
         },
@@ -36,7 +36,7 @@ class Chart extends Component {
 
     updateDimensions = () => {
         this.setState({ window: { width: window.innerWidth, height: window.innerHeight } });
-    }
+    };
 
     componentWillMount() {
         this.updateDimensions();
@@ -65,13 +65,15 @@ class Chart extends Component {
                             },
                         },
                         scales: {
-                            yAxes: [{
-                                display: true,
-                                ticks: {
-                                    suggestedMin: 50
-                                }
-                            }]
-                        }
+                            yAxes: [
+                                {
+                                    display: true,
+                                    ticks: {
+                                        suggestedMin: 50,
+                                    },
+                                },
+                            ],
+                        },
                     }}
                 />
             </div>
