@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Portfolio.module.scss";
+import classes from "./Portfolio.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -27,7 +27,9 @@ function Portfolio() {
                     </p>
                 </div>
             </Carousel>
-            <p>Source code of projects can be found here: <a href="https://www.github.com/BrylleMutia">Brylle Mutia on Github</a></p>
+            <p>
+                Source code of projects can be found here: <a href="https://www.github.com/BrylleMutia">Brylle Mutia on Github</a>
+            </p>
         </div>
     );
 }

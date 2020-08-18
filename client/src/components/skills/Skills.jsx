@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "./Skills.module.scss";
+import classes from "./Skills.module.css";
 
 import Chart from "./chart/Chart";
 import Bars from "./progress/Progress";

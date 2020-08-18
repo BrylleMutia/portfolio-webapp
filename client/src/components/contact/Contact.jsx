@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "./Contact.module.scss";
+import classes from "./Contact.module.css";
 
 import fbIcon from "../img/contact/facebook.png";
 import twitterIcon from "../img/contact/twitter.png";
@@ -71,8 +71,8 @@ function Contact() {
                 </div>
 
                 <form className={classes.input_form} onSubmit={sendMail} method="POST">
-                    <input type="text" name="name" placeholder="Name" required/>
-                    <input type="email" name="email" placeholder="Email" required/>
+                    <input type="text" name="name" placeholder="Name" required />
+                    <input type="email" name="email" placeholder="Email" required />
                     <input type="number" name="budget" placeholder="Budget" required />
                     <textarea name="description" placeholder="Project description" required></textarea>
                     <button type="submit">Send</button>

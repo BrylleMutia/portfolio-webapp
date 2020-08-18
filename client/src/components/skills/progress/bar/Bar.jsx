@@ -2,9 +2,9 @@ import React from "react";
 import classes from "./Bar.module.css";
 
 function Bar({ barWidth, barColor, barLabel }) {
-    const barStyle = { 
-        "--width": `${barWidth}`, 
-        "--color": `${barColor}` 
+    const barStyle = {
+        "--width": `${barWidth}`,
+        "--color": `${barColor}`,
     };
 
     return (
@@ -13,6 +13,5 @@ function Bar({ barWidth, barColor, barLabel }) {
         </React.Fragment>
     );
 }
-
 
 export default Bar;

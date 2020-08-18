@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Bio.module.scss";
+import classes from "./Bio.module.css";
 import bioImg from "../img/bio/bio.jpg";
 
 import { Link } from "react-router-dom";
@@ -11,10 +11,10 @@ function Bio() {
                 <div className={classes.column_one}>
                     <h3>OVERVIEW</h3>
                     <p>
-                        Hi there! I'm Isidro Brylle Mutia, and I work as a web developer. I spent 5 years completing my Computer Engineering
-                        degree where I was exposed to both the hardware and software fields of technology, with a bit of math (like 60% of it). Then
-                        as I immerse myself to different technologies, I realized that the software field is where I want to be, where I can help
-                        those people in need and give as much impact to the world as a whole.
+                        Hi there! I'm Isidro Brylle Mutia, and I work as a web developer. I spent 5 years completing my Computer Engineering degree
+                        where I was exposed to both the hardware and software fields of technology, with a bit of math (like 60% of it). Then as I
+                        immerse myself to different technologies, I realized that the software field is where I want to be, where I can help those
+                        people in need and give as much impact to the world as a whole.
                     </p>
                 </div>
                 <div className={classes.column_two}>

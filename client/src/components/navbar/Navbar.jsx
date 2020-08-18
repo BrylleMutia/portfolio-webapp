@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Navbar.module.scss";
+import classes from "./Navbar.module.css";
 
 import HomeIcon from "../img/nav/ic_home_white_24dp.png";
 import BioIcon from "../img/nav/ic_person_white_24dp.png";
