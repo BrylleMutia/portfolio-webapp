@@ -10,7 +10,7 @@ function Portfolio() {
     return (
         <div className={classes.portfolio}>
             <div className={classes.title}>
-                <h2>MY PROJECTS</h2>
+                <p>MY PROJECTS</p>
                 <hr />
             </div>
             <Carousel>

@@ -54,9 +54,11 @@ $background_secondary: #1a1d26;
 
 .column_two {
     order: 2;
+    height: 50%;
+    max-height: 50vh;
 
     img {
-        width: 50%;
+        width: 60%;
         min-width: 150px;
         border: 5px solid $primary;
         transform: rotate(7deg);

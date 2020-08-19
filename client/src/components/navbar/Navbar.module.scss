@@ -8,6 +8,8 @@ nav {
     min-width: 80px;
     height: 100vh;
     position: fixed;
+    bottom: 0;
+    left: 0;
     z-index: 1;
 
     .link {
@@ -37,11 +39,8 @@ nav {
 @media screen and (max-width: 500px) {
     nav {
         flex-direction: row;
-        bottom: 0;
-        left: 0;
         width: 100vw;
         height: 9vh;
-        // max-height: 60px;
 
         .link {
             width: 20%;

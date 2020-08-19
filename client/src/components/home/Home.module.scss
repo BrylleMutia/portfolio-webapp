@@ -13,7 +13,8 @@ main {
     align-items: center;
     flex-direction: column;
     margin-left: 7%;
-    // border: 1px solid red;
+    border: 1px solid red;
+    overflow: hidden;
 
     // animation for horizontal breaks
     @keyframes stretch {
@@ -125,7 +126,6 @@ main {
         justify-content: center;
         align-items: center;
         height: 10rem;
-        // padding-right: 5%;
         padding-right: 5rem;
 
         .button_primary {
@@ -156,7 +156,7 @@ main {
         left: -5rem;
         z-index: -1;
         width: 35vw;
-        height: 100vh;
+        height: 100%;
         transform: skewX(-15deg);
         animation: entry 1s ease-in;
     }
@@ -168,7 +168,7 @@ main {
         right: -7rem;
         z-index: -1;
         width: 35vw;
-        height: 100vh;
+        height: 100%;
         transform: skewX(-15deg);
         animation: entry 1s ease-in;
     }

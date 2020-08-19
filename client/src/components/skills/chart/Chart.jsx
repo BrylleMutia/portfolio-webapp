@@ -70,9 +70,18 @@ class Chart extends Component {
                                     display: true,
                                     ticks: {
                                         suggestedMin: 50,
+                                        fontColor: "white"
                                     },
                                 },
                             ],
+                            xAxes: [
+                                {
+                                    display: true,
+                                    ticks: {
+                                        fontColor: "white"
+                                    }
+                                }
+                            ]
                         },
                     }}
                 />

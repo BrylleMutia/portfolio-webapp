@@ -63,10 +63,12 @@
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  height: 50%;
+  max-height: 50vh;
 }
 
 .column_two img {
-  width: 50%;
+  width: 60%;
   min-width: 150px;
   border: 5px solid #45a28e;
   -webkit-transform: rotate(7deg);

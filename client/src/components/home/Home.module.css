@@ -16,6 +16,8 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 7%;
+  border: 1px solid red;
+  overflow: hidden;
 }
 
 @-webkit-keyframes stretch {
@@ -229,7 +231,7 @@ main .slant_left {
   left: -5rem;
   z-index: -1;
   width: 35vw;
-  height: 100vh;
+  height: 100%;
   -webkit-transform: skewX(-15deg);
           transform: skewX(-15deg);
   -webkit-animation: entry 1s ease-in;
@@ -243,7 +245,7 @@ main .slant_right {
   right: -7rem;
   z-index: -1;
   width: 35vw;
-  height: 100vh;
+  height: 100%;
   -webkit-transform: skewX(-15deg);
           transform: skewX(-15deg);
   -webkit-animation: entry 1s ease-in;
