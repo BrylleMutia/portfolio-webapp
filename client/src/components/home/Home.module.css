@@ -16,7 +16,6 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 7%;
-  border: 1px solid red;
   overflow: hidden;
 }
 
