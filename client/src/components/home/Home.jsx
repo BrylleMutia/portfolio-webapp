@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
     return (
-        <main>
+        <div className={classes.home}>
             <div className={classes.firstline}>
                 <h5>Hello. I'm</h5>
                 <hr />
@@ -25,7 +25,7 @@ function Home() {
 
             <div className={classes.slant_left}></div>
             <div className={classes.slant_right}></div>
-        </main>
+        </div>
     );
 }
 

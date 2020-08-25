@@ -36,6 +36,10 @@ $background_secondary: #1a1d26;
     height: 10%;
     text-indent: 4em;
     color: $textcolor;
+
+    p {
+        font-style: italic;
+    }
 }
 
 .author {
@@ -100,5 +104,10 @@ h4 {
 
     .message {
         text-indent: 2.5em;
+        width: 80%;
+    }
+
+    .data_display {
+        margin-bottom: -10rem;
     }
 }

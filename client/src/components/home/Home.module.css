@@ -1,4 +1,4 @@
-main {
+.home {
   width: 100%;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
@@ -16,7 +16,9 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 7%;
+  border: 1px solid red;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 @-webkit-keyframes stretch {
@@ -103,7 +105,7 @@ main {
   }
 }
 
-main .firstline {
+.home .firstline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,13 +119,13 @@ main .firstline {
   width: 70%;
 }
 
-main .firstline h5 {
+.home .firstline h5 {
   font-size: 3.5em;
   font-style: italic;
   color: #c5c6c7;
 }
 
-main .firstline hr {
+.home .firstline hr {
   margin-left: 5%;
   background: #c5c6c7;
   color: #c5c6c7;
@@ -135,7 +137,7 @@ main .firstline hr {
           animation: stretch 1s ease-in;
 }
 
-main .secondline {
+.home .secondline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,7 +148,7 @@ main .secondline {
   width: 70%;
 }
 
-main .secondline .name {
+.home .secondline .name {
   font-size: 5em;
   color: #66fcf1;
   height: 2rem;
@@ -156,7 +158,7 @@ main .secondline .name {
           animation: name-entry 2s ease-out;
 }
 
-main .thirdline {
+.home .thirdline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +172,7 @@ main .thirdline {
   width: 70%;
 }
 
-main .thirdline hr {
+.home .thirdline hr {
   background: #c5c6c7;
   color: #c5c6c7;
   -webkit-box-flex: 1;
@@ -181,13 +183,13 @@ main .thirdline hr {
           animation: stretch 1s ease-in;
 }
 
-main .thirdline h6 {
+.home .thirdline h6 {
   margin-left: 5%;
   font-size: 1.5em;
   color: #c5c6c7;
 }
 
-main .fourthline {
+.home .fourthline {
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,7 +204,7 @@ main .fourthline {
   padding-right: 5rem;
 }
 
-main .fourthline .button_primary {
+.home .fourthline .button_primary {
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: #66fcf1;
@@ -218,12 +220,12 @@ main .fourthline .button_primary {
           animation: highlight 1s 2.5s ease-in-out;
 }
 
-main .fourthline .button_primary:hover, main .fourthline .button_primary:focus {
+.home .fourthline .button_primary:hover, .home .fourthline .button_primary:focus {
   background: #45a28e;
   cursor: pointer;
 }
 
-main .slant_left {
+.home .slant_left {
   background: #1a1d26;
   position: absolute;
   top: 0;
@@ -237,7 +239,7 @@ main .slant_left {
           animation: entry 1s ease-in;
 }
 
-main .slant_right {
+.home .slant_right {
   background: #1a1d26;
   position: absolute;
   top: 0;
@@ -253,13 +255,13 @@ main .slant_right {
 
 @media (max-width: 900px) {
   .firstline {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .secondline {
     font-size: 0.6rem;
   }
   .thirdline {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .fourthline {
     margin-left: 5rem;
@@ -267,11 +269,11 @@ main .slant_right {
 }
 
 @media (max-width: 500px) {
-  main {
+  .home {
     margin-left: 0;
   }
   .firstline {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
   .secondline {
     font-size: 0.7rem;
@@ -279,7 +281,7 @@ main .slant_right {
     margin-bottom: 7%;
   }
   .thirdline {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
   .fourthline {
     margin-left: 5rem;

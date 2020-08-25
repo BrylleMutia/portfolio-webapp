@@ -5,7 +5,7 @@ const path = require("path");
 const config = require("config");
 const nodemailer = require("nodemailer");
 
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 router.post("/sendmail", (req, res) => {
@@ -20,7 +20,6 @@ router.post("/sendmail", (req, res) => {
             pass: config.get("GMAIL_PASS"),
         },
     });
-    
 
     // specify how the email will look like
     const mailOpts = {

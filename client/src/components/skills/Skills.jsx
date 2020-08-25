@@ -12,14 +12,14 @@ function Skills() {
             </div>
             <div className={classes.message}>
                 <p>
-                    <i>
-                        "I'm passionate about my craft, so I hone my skills even to the depths of each, as long as I can still reach it. Every day is
-                        a chance to learn something new. Numbers will just be numbers, but passion is what makes one a master".
-                    </i>
+                    "I'm passionate about my craft, so I hone my skills even to the depths of each, as long as I can still reach it. Every day is a
+                    chance to learn something new. Numbers will just be numbers, but passion is what makes one a master".
                 </p>
             </div>
             <div className={classes.data_display}>
-                <div className={classes.display}><Chart /></div>
+                <div className={classes.display}>
+                    <Chart />
+                </div>
             </div>
         </div>
     );

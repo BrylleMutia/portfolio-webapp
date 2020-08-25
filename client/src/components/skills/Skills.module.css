@@ -41,6 +41,10 @@
   color: #c5c6c7;
 }
 
+.message p {
+  font-style: italic;
+}
+
 .author {
   width: 100%;
   font-weight: 600;
@@ -116,6 +120,10 @@ h4 {
   }
   .message {
     text-indent: 2.5em;
+    width: 80%;
+  }
+  .data_display {
+    margin-bottom: -10rem;
   }
 }
 /*# sourceMappingURL=Skills.module.css.map */
